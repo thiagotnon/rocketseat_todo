@@ -16,3 +16,17 @@ Conceitos aplicados como:
 - Listas e chaves no ReactJS
 - Propriedades
 - Componentização
+<hr/>
+
+### Executando o projeto
+
+```bash
+# clone o projeto
+git clone https://github.com/thiagotnon/rocketseat_todo.git
+
+# instale as dependências
+yarn install ou npm install
+
+# execute o projeto
+yarn dev ou npm run dev
+```
