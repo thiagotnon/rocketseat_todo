@@ -1,0 +1,23 @@
+.counter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 0.875rem;
+  padding: 1rem 0;
+  font-weight: bold;
+}
+
+.counter span {
+  font-size: 0.75rem;
+  background: var(--gray-400);
+  padding: 2px 8px;
+  border-radius: 1rem;
+  color: var(--gray-200);
+}
+.counter .total {
+  color: var(--purple);
+}
+
+.counter .difference {
+  color: var(--blue);
+}

@@ -1,0 +1,102 @@
+.card {
+  width: 100%;
+  background: var(--gray-500);
+  border: 1px solid var(--gray-400);
+  border-radius: 0.5rem;
+  padding: 1rem;
+  color: var(--gray-100);
+
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.card + .card {
+  margin-top: 0.75rem;
+}
+
+.card button {
+  border: 0;
+  line-height: 0;
+  border-radius: 4px;
+  background: transparent;
+  color: var(--gray-300);
+  cursor: pointer;
+  transition: 0.2s;
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.card button:hover {
+  background: var(--gray-400);
+  color: var(--danger);
+}
+
+.formGroup label .active {
+  text-decoration: line-through;
+}
+
+.formGroup label {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  user-select: none;
+  transition: 0.2s;
+  font-size: 0.875rem;
+  line-height: 1.6;
+}
+
+.formGroup label input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.formGroup label .checkmark {
+  position: absolute;
+  top: 4px;
+  left: 0;
+  height: 17px;
+  width: 17px;
+  background-color: transparent;
+  border-radius: 50%;
+  box-shadow: 0 0 0 2px var(--blue);
+  transition: 0.2s;
+}
+
+.formGroup label:hover input ~ .checkmark {
+  background-color: var(--purple);
+  box-shadow: 0 0 0 2px var(--purple);
+}
+
+.formGroup label input:checked ~ .checkmark {
+  background-color: var(--purple-dark);
+  box-shadow: 0 0 0 2px var(--purple-dark);
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.formGroup label input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.formGroup label .checkmark:after {
+  left: 6px;
+  top: 1px;
+  width: 4px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}

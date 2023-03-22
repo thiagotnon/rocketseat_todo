@@ -1,0 +1,8 @@
+.input {
+  width: 100%;
+  background: var(--gray-500);
+  border: 1px solid var(--gray-700);
+  border-radius: 8px;
+  padding: 1rem;
+  color: var(--gray-100);
+}
